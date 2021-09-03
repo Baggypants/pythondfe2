@@ -1,0 +1,1 @@
+print('cheese is a type of meat')
