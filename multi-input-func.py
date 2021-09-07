@@ -8,8 +8,14 @@ def studentdeets(nameVar,ageVar):
     return {'name':nameVar,'age':ageVar,'namelengtthanage':nameGtAge}
 
 
-studentName = str(input('Put in a name: '))
-studentAge  = int(input('Type in your Age: '))
+def inputLR(message,maxVal):
+    testInp = input(message)
+    if int(testInp) > maxVal:
+        exit()
+    return testInp
+
+studentName = str(inputLR('Put in a name: ',50))
+studentAge  = int(inputLR('Type in your Age: ',120))
 funcReturn = studentdeets(studentName,studentAge)
 
 print(funcReturn)
